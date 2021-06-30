@@ -3,46 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./styles.css">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Interactive pricing component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-<header>
-  <h1>Simple, traffic-based pricing</h1>
-  <h2>Sign-up for our 30-day trial.</h2> 
-  <h2>No credit card required.</h2>
-</header>
-<div class="info-container">
-<div id="pageviews-container">
-  <p>Pageviews</p>
-</div>
-<div id="price-container">
-  <p>$ /month</p>
-</div>
-<div id="billing-container">
-  <p>Monthly Billing</p>
-  <p>Yearly Billing <span class="desktop discount">25% discount</span><span class="mobile discount">-25%</span></p>
-</div>
-<div id="benefits-container">
-  Unlimited websites
-  100% data ownership
-  Email reports
-</div>
-<button>
-  Start my trial
-</button>
-</div>
+    <div class="container">
+      <header>
+        <div class="centered">
+          <h1>Simple, traffic-based pricing</h1>
+          <p>Sign-up for our 30-day trial. No credit card required.</p>
+        </div>
+      </header>
+
+      <main>
+        <div class="pricing-component"></div>
+          <div id="pageviews-container">
+            <p>Pageviews</p>
+          </div>
+          <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+          </div>
+          <div id="price">
+            <span> /month</span>
+          </div>
+          <div class="switch">
+            <span>Monthly Billing</span>
+            <button class="swtich-btn" id="switch"></button>
+            <span>Yearly Billing 25% discount</span>
+          </div>
+        <div class="info-benefits-container">
+            <ul>
+              <li>Unlimited websites</li>
+              <li>100% data ownership</li>
+              <li>Email reports</li>
+            </ul>
+          <a class="trial-btn" href="#">Start my trial</a>
+        </div>
+    </main>
+  </div>
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/bettyspurgeon" target="_blank">Betty Spurgeon</a>.
   </div>
 </body>
 </html>

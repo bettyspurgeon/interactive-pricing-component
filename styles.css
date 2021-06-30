@@ -1,0 +1,74 @@
+:root {
+    --soft-cyan: hsl(174, 77%, 80%);
+    /*Full Slider Bar*/
+    --strong-cyan: hsl(174, 86%, 45%);
+    /*Slider Backround*/
+    --light-grayish-red: hsl(14, 92%, 95%);
+    /*Discount Background*/
+    --light-red: hsl(15, 100%, 70%);
+    /*Discount Text*/
+    --pale-blue: hsl(226, 100%, 87%);
+    /*CTA Text*/
+    --white: hsl (0, 0%, 100%);
+    /*Pricing Component Background*/
+    --very-pale-blue: hsl(230, 100%, 99%);
+    /*Main Background*/
+    --light-grayish-blue: hsl(224, 65%, 95%);
+    /*Empty Slider Bar*/
+    --light-grayish-blue: hsl(223, 50%, 87%);
+    /*Toggle Background*/
+    --grayish-blue: hsl(225, 20%, 60%);
+    /*Text*/
+    --dark-desaturated-blue: hsl(227, 35%, 25%);
+    /*Text & CTA Background*/
+}
+
+@font-face {
+    font-family: 'manrope-600';
+    src: url(./fonts/Manrope-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'manrope-800';
+    src: url(./fonts/Manrope-ExtraBold.ttf);
+}
+html {
+    box-sizing: border-box;
+    font-family: "Open sans", sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 15px 25px;
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+body {
+    font-family: Manrope, sans-serif;
+
+}
+li {
+    list-style-image: url(./images/icon-check.svg);
+    list-style-position:inside;
+    margin-left: -50px;
+}
+.trial-btn {
+    
+}
+.attribution {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
